@@ -1,0 +1,25 @@
+{
+  "name": "perspective",
+  "version": "0.1.0",
+  "description": "Randomly generated conversions",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glentakahashi/perspective.git"
+  },
+  "author": "Glen Takahashi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/glentakahashi/perspective/issues"
+  },
+  "homepage": "https://github.com/glentakahashi/perspective#readme",
+  "dependencies": {
+    "prettier": "^1.18.2",
+    "styled-components": "^4.3.2",
+    "typescript": "^3.6.3",
+    "webpack": "^4.40.2"
+  }
+}

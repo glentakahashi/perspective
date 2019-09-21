@@ -1,0 +1,5 @@
+- hooks:
+  - id: black
+    language: system
+    entry: black
+    files: '*.py'
