@@ -1,5 +1,8 @@
-- hooks:
+- repo: local
+  hooks:
   - id: black
+    name: black
     language: system
     entry: black
-    files: '*.py'
+    types: [python]
+    files: \.py$
