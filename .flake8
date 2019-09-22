@@ -1,0 +1,4 @@
+[flake8]
+# 88 to match black
+max-line-length = 88
+exclude = .git, __pycache__, node_modules, dist, .mypy_cache

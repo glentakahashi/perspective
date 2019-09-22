@@ -1,8 +1,34 @@
 - repo: local
   hooks:
-  - id: black
-    name: black
-    language: system
-    entry: black
-    types: [python]
-    files: \.py$
+    # Backend
+    - id: black
+      name: black
+      language: system
+      entry: black server
+      pass_filenames: false
+    - id: flake8
+      name: flake8
+      language: system
+      entry: flake8 server
+      pass_filenames: false
+    - id: pylint
+      name: pylint
+      language: system
+      entry: pylint server
+      pass_filenames: false
+    - id: mypy
+      name: mypy
+      entry: mypy server
+      language: system
+      pass_filenames: false
+    # Frontend
+    - id: eslint
+      name: eslint
+      entry: yarn eslint:fix
+      language: system
+      pass_filenames: false
+    - id: stylelint
+      name: stylelint
+      entry: yarn stylelint
+      language: system
+      pass_filenames: false

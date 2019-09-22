@@ -1,8 +1,10 @@
-from flask import Flask
+import flask
 
-app = Flask(__name__)
+from server.views.hello import hello_blueprint
+from server.configurations import DevelopmentConfig
 
+app = flask.Flask(__name__, static_folder="./dist")
 
-@app.route("/")
-def hello_world():
-    return "Hello World!"
+app.config.from_object(DevelopmentConfig)
+
+app.register_blueprint(hello_blueprint)
