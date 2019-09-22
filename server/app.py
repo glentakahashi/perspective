@@ -6,5 +6,4 @@ from server.configurations import DevelopmentConfig
 app = flask.Flask(__name__, static_folder="./dist")
 
 app.config.from_object(DevelopmentConfig)
-
 app.register_blueprint(hello_blueprint)
